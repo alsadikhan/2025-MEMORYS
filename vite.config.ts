@@ -2,46 +2,38 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
-import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
-import { metaImagesPlugin } from "./vite-plugin-meta-images";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default defineConfig({
-  base: "/2025-memories./",   // 🔴 এটা অবশ্যই লাগবে
-
-  root: path.resolve(import.meta.dirname, "client"),
-
-  build: {
-    outDir: path.resolve(import.meta.dirname, "dist"),
-    emptyOutDir: true,
-  },
-
   plugins: [
     react(),
-    runtimeErrorOverlay(),
     tailwindcss(),
-    metaImagesPlugin(),
   ],
 
   resolve: {
     alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+      "@": path.resolve(__dirname, "client", "src"),
+      "@shared": path.resolve(__dirname, "shared"),
+      "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
 
-  css: {
-    postcss: {
-      plugins: [],
-    },
+  // Frontend source folder
+  root: path.resolve(__dirname, "client"),
+
+  build: {
+    // Build output folder for Vercel
+    outDir: path.resolve(__dirname, "dist/public"),
+    emptyOutDir: true,
+    sourcemap: false,
   },
 
   server: {
-    host: "0.0.0.0",
-    allowedHosts: true,
-    fs: {
-      strict: true,
-      deny: ["**/.*"],
-    },
+    host: "localhost",
+    port: 5173,
   },
 });
