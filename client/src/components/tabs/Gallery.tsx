@@ -4,20 +4,51 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { X, ZoomIn } from "lucide-react";
 
 // Import stock images using generic paths that resolved in previous step
-import img1 from "@assets/stock_images/romantic_couple_hold_f699e10b.jpg";
-import img2 from "@assets/stock_images/romantic_couple_hold_85c614db.jpg";
-import img3 from "@assets/stock_images/romantic_couple_hold_4c54a965.jpg";
-import img4 from "@assets/stock_images/pink_roses_bouquet_0a728684.jpg";
-import img5 from "@assets/stock_images/pink_roses_bouquet_ad0411ea.jpg";
-import img6 from "@assets/stock_images/pink_roses_bouquet_74c83413.jpg";
+import img1 from "@assets/stock_images/rjn1.jpg";
+import img2 from "@assets/stock_images/rjn2.jpg";
+import img3 from "@assets/stock_images/rjn3.jpg";
+import img4 from "@assets/stock_images/rjn4.jpg";
+import img5 from "@assets/stock_images/rjn5.jpg";
+import img6 from "@assets/stock_images/rjn6.jpg";
+import img7 from "@assets/stock_images/rjn7.jpg";
+import img8 from "@assets/stock_images/rjn8.jpg";
+import img9 from "@assets/stock_images/rjn9.jpg";
+import img10 from "@assets/stock_images/rjn10.jpg";
+import img11 from "@assets/stock_images/rjn11.jpg";
+import img12 from "@assets/stock_images/rjn14.jpg";
+import img13 from "@assets/stock_images/rjn13.jpg";
+import img14 from "@assets/stock_images/rjn15.jpg";
+import img16 from "@assets/stock_images/rjn16.jpg";
+import img17 from "@assets/stock_images/rjn20.jpg";
+import img18 from "@assets/stock_images/rjn21.jpg";
+import img19 from "@assets/stock_images/rjn22.jpg";
+import img20 from "@assets/stock_images/rjn17.jpeg";
+
 
 const PHOTOS = [
-  { id: 1, src: img1, caption: "Walking into forever with you" },
-  { id: 2, src: img4, caption: "Beautiful flowers for a beautiful soul" },
-  { id: 3, src: img2, caption: "Just us against the world" },
-  { id: 4, src: img5, caption: "Sweet moments" },
-  { id: 5, src: img3, caption: "Holding on tight" },
+  { id: 1, src: img1, caption: "Our first meeting" },
+  { id: 2, src: img4, caption: "when i start trusting you" },
+  { id: 3, src: img2, caption: "my birthday first wish from you" },
+  { id: 4, src: img5, caption: "i want to touch you" },
+  { id: 5, src: img3, caption: "starting of our love story" },
   { id: 6, src: img6, caption: "Love in bloom" },
+  { id: 7, src: img7, caption: "Forever and always" },
+  { id: 8, src: img8, caption: "my first sketch for you" },
+  { id: 9, src: img9, caption: "Together we shine" },
+  { id: 10, src: img10, caption: "Endless adventures" },
+  { id: 11, src: img11, caption: "Happily ever after" },
+  { id: 12, src: img12, caption: "our first long video call" },
+  { id: 13, src: img13, caption: "my princess😇" },
+  { id: 14, src: img14, caption: "🫣🥹🥹 ugly boy" },
+  { id: 16, src: img16, caption: "you and me 🥳😝" },
+  { id: 17, src: img17, caption: "awww my moon🥹😇" },
+  { id: 18, src: img18, caption: "my beautifull hands🥰" },
+  { id: 19, src: img19, caption: "my beautifull hands🥰" },
+  { id: 20, src: img20, caption: "crying angel😇🥺" },
+  
+  
+  
+  
 ];
 
 export default function Gallery() {

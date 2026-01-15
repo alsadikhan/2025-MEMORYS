@@ -54,7 +54,7 @@ export default function Login({ onLogin }: LoginProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password.toLowerCase().trim() === "princess") {
+    if (password.toLowerCase().trim() === "bell") {
       triggerConfetti();
       setTimeout(onLogin, 2000);
     } else {
@@ -118,7 +118,7 @@ export default function Login({ onLogin }: LoginProps) {
           </motion.div>
           
           <h1 className="text-5xl font-heading mb-4 text-gray-800 group-hover:text-primary transition-colors">For My Love</h1>
-          <p className="text-muted-foreground mb-10 font-medium">Please enter the secret word to see your surprise</p>
+          <p className="text-muted-foreground mb-10 font-medium">Please enter the secret word to see Our Memories</p>
           
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="relative group">
@@ -161,7 +161,7 @@ export default function Login({ onLogin }: LoginProps) {
               className="w-full bg-primary hover:bg-primary/90 text-white rounded-2xl text-xl h-16 shadow-xl shadow-primary/20 transition-all active:scale-95 group overflow-hidden relative"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
-                Unlock Surprise
+                Unlock Our Memories
                 <motion.div
                   animate={{ 
                     scale: [1, 1.3, 1],

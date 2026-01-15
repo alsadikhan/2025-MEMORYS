@@ -6,41 +6,42 @@ import { Slider } from "@/components/ui/slider";
 import { Play, Pause, SkipBack, SkipForward, Music as MusicIcon, Volume2, Download } from "lucide-react";
 import { Song } from "@/types";
 
+
 const PLAYLIST: Song[] = [
   {
     id: "1",
-    title: "Perfect",
-    artist: "Ed Sheeran",
-    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-    cover: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=400&q=80",
+    title: "КАМИН",
+    artist: "EMIN feat. JONY",
+    url: "Musics/ask.mp3",
+    cover: "Images/ask.png",
   },
   {
     id: "2",
-    title: "All of Me",
-    artist: "John Legend",
-    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-    cover: "https://images.unsplash.com/photo-1459749411177-d4a428c389f5?w=400&q=80",
+    title: "No One Noticed",
+    artist: "The Marías",
+    url: "Musics/ask5.mp3",
+    cover: "Images/ask1.jpeg",
   },
   {
     id: "3",
-    title: "Can't Help Falling in Love",
-    artist: "Elvis Presley",
-    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
-    cover: "https://images.unsplash.com/photo-1516280440614-6697288d5d38?w=400&q=80",
+    title: " 'Stuck In The Middle",
+    artist: "bell ratjanee",
+    url: "Musics/ask4.mp3",
+    cover: "Images/ask4.jpg",
   },
   {
     id: "4",
-    title: "A Thousand Years",
-    artist: "Christina Perri",
-    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
-    cover: "https://images.unsplash.com/photo-1514525253344-991472a786bc?w=400&q=80",
+    title: "first i love you in voice",
+    artist: "bell ratjanee",
+    url: "Musics/ask2.mp3",
+    cover: "Images/ask2.jpg",
   },
   {
     id: "5",
-    title: "Say You Won't Let Go",
-    artist: "James Arthur",
-    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
-    cover: "https://images.unsplash.com/photo-1493225255756-d9584f8606e9?w=400&q=80",
+    title: "husband🥹",
+    artist: "bell ratjanee",
+    url: "Musics/ask3.mp3",
+    cover: "Images/ask3.jpg",
   },
 ];
 

@@ -3,17 +3,27 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Heart } from "lucide-react";
 
 const REMINDERS = [
-  { id: 1, text: "You are capable of amazing things.", color: "bg-yellow-100", rotate: "-rotate-2" },
-  { id: 2, text: "Your smile lights up my whole world.", color: "bg-pink-100", rotate: "rotate-3" },
-  { id: 3, text: "I'm so incredibly proud of you.", color: "bg-blue-100", rotate: "-rotate-1" },
-  { id: 4, text: "Don't forget to drink water today!", color: "bg-green-100", rotate: "rotate-2" },
-  { id: 5, text: "You are loved more than you know.", color: "bg-purple-100", rotate: "-rotate-3" },
+  { id: 1, text: "You are capable of amazing things🥰.", color: "bg-yellow-100", rotate: "-rotate-2" },
+  { id: 2, text: "Your smile lights up my whole world😇🥰.", color: "bg-pink-100", rotate: "rotate-3" },
+  { id: 3, text: "I'm so incredibly proud of you.🥰🫢", color: "bg-blue-100", rotate: "-rotate-1" },
+  { id: 4, text: "You are My Most Expensive Gift.🥳😇", color: "bg-green-100", rotate: "rotate-2" },
+  { id: 5, text: "I love You more than you know.🥺😥", color: "bg-purple-100", rotate: "-rotate-3" },
+  { id: 6, text: "Take a deep breath and relax🤗.", color: "bg-orange-100", rotate: "rotate-1" },
+  { id: 7, text: "You make my heart skip a beat.🥺😩", color: "bg-red-100", rotate: "-rotate-2" },
+  { id: 8, text: "Believe in yourself as I believe in you.🥹😊", color: "bg-teal-100", rotate: "rotate-2" },
+  { id: 9, text: "You are my sunshine on a cloudy day.😇🤗", color: "bg-cyan-100", rotate: "-rotate-1" },
+  { id: 10, text: "Every moment with you is a treasure.🤗🥰", color: "bg-lime-100", rotate: "rotate-3" },
+  { id: 11, text: "You are stronger than you think.😼🫡", color: "bg-amber-100", rotate: "-rotate-3" },
+  { id: 12, text: "Your kindness inspires me daily.😇🥰", color: "bg-rose-100", rotate: "rotate-1" },
+  { id: 13, text: "You are my forever and always.🥳😇", color: "bg-violet-100", rotate: "-rotate-2" },
+  { id: 14, text: "Keep shining my beautiful soul🥰🥺.", color: "bg-fuchsia-100", rotate: "rotate-2" },
+  { id: 15, text: "my angry angel🥺😇.", color: "bg-indigo-100", rotate: "-rotate-1" },
 ];
 
 export default function Notes() {
   return (
     <div className="p-4 max-w-5xl mx-auto">
-      <h2 className="text-3xl font-heading text-center mb-8">Daily Reminders</h2>
+      <h2 className="text-3xl font-heading text-center mb-8">Some Important Words</h2>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
         {REMINDERS.map((note, index) => (
